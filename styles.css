@@ -1,5 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 * {
   box-sizing: border-box;
@@ -8,17 +8,29 @@
 }
 
 :root {
-  --bg-one: #272a31;
-  --bg-two: #ec5242;
-  --bg-three: #d3d3d3;
-  --bg-four: white;
-  --color-light: #fff;
-  --color-dark: #272a31;
-  --color-grey: #d3d3d3;
+  --blue: #00688d;
+  --green: #0d7d4d;
+  --teal: #006daa;
+  --red: #ab0d02;
+  --yellow: #d6b600;
+  --white: #fff;
+  --dark-gray: #454545;
+  --primary: #00262b;
+  --secondary: #454545;
+  --brand: #d23228;
+  --success: #0d7d4d;
+  --info: #03c7e8;
+  --warning: #f0cc00;
+  --danger: #ab0d02;
+  --light: #e1dddb;
+  --dark: #00262b;
+  --gray: #707070;
+  --accent-a: #03c7e8;
+  --accent-b: #f0cc00;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -49,6 +61,7 @@ a {
   left: 20px;
   top: 15px;
   font-size: 30px;
+  color: var(--primary);
   font-weight: bolder;
   background-color: transparent;
   z-index: 1;
@@ -60,17 +73,17 @@ a {
 }
 
 .nav1 {
-  background-color: var(--bg-one);
+  background-color: var(--primary);
 }
 
 .nav1 a {
-  color: var(--color-grey);
+  color: var(--white);
 }
 
 .nav2 {
-  background-color: var(--bg-thre);
-  color: var(--color-dark);
-  box-shadow: 0 10px 8px var(--bg-three);
+  background-color: var(--white);
+  color: var(--primary);
+  box-shadow: 0 10px 8px var(--light);
 }
 
 .ul-1 {
@@ -78,8 +91,9 @@ a {
 }
 
 .ul-1 > * {
-  color: var(--color-grey);
+  color: var(--primary);
   padding: 5px;
+  font-weight: bold;
 }
 
 .btn-close {
@@ -97,8 +111,9 @@ a {
 }
 
 .ul-2 > * {
-  color: var(--color-grey);
+  color: var(--dark);
   padding: 5px;
+  font-weight: bold;
 }
 
 .ul-1 > *:hover {
