@@ -69,7 +69,7 @@ a {
 }
 
 .burger:hover {
-  opacity: 0.7;
+  text-shadow: 1px 1px var(--white);
 }
 
 .nav1 {
@@ -120,6 +120,16 @@ a {
   opacity: 0.7;
 }
 
-.ul-2 > *:hover {
+.ul-2 li > *:hover {
+  text-shadow: 1px 1px var(--primary);
+}
+
+/*   HEADLINE SECTION    */
+#headline {
+  position: relative;
+  background-image: url(./images/hero-photo-02.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
   opacity: 0.7;
 }
