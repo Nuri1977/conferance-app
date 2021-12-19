@@ -1,5 +1,110 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+:root {
+  --bg-one: #272a31;
+  --bg-two: #ec5242;
+  --bg-three: #d3d3d3;
+  --bg-four: white;
+  --color-light: #fff;
+  --color-dark: #272a31;
+  --color-grey: #d3d3d3;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*  HEAD NAVIGATION */
+.burger {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.burger:hover {
+  opacity: 0.7;
+}
+
+.nav1 {
+  background-color: var(--bg-one);
+}
+
+.nav1 a {
+  color: var(--color-grey);
+}
+
+.nav2 {
+  background-color: var(--bg-thre);
+  color: var(--color-dark);
+  box-shadow: 0 10px 8px var(--bg-three);
+}
+
+.ul-1 {
+  padding: 10px 0;
+}
+
+.ul-1 > * {
+  color: var(--color-grey);
+  padding: 5px;
+}
+
+.btn-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-close a {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.ul-2 {
+  padding: 10px 0;
+}
+
+.ul-2 > * {
+  color: var(--color-grey);
+  padding: 5px;
+}
+
+.ul-1 > *:hover {
+  opacity: 0.7;
+}
+
+.ul-2 > *:hover {
+  opacity: 0.7;
 }
