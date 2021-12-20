@@ -157,8 +157,9 @@ blockquote {
   color: var(--primary);
   font-size: 16px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 20px 12px;
+  opacity: 0.7;
 }
 
 .hero-date {
@@ -168,6 +169,7 @@ blockquote {
   line-height: 24px;
   font-weight: 300;
   padding: 12px 0 0 0;
+  opacity: 0.8;
 }
 
 .hero-join {
@@ -175,6 +177,7 @@ blockquote {
   font-size: 12px;
   line-height: 20px;
   font-weight: 700;
+  opacity: 0.9;
 }
 
 /* COURSES SEECTION  */
@@ -330,4 +333,51 @@ blockquote {
   color: var(--secondary);
   padding: 10px 10px 0 10px;
   font-weight: bold;
+}
+
+/* ---------------------------------- */
+
+/*    ABOUT PAGE                       */
+
+/* ----------------------------------- */
+.inner-hero-a {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero-paragraph-ab {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--terciary);
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 12px;
+  opacity: 0.7;
+}
+
+.hero-question {
+  color: var(--primary);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 12px 5px 12px;
+  opacity: 0.9;
+}
+
+.hero-contact {
+  text-decoration: underline;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
 }
