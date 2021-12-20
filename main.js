@@ -6,8 +6,6 @@ const fb = document.querySelector('.fb');
 const tw = document.querySelector('.tw');
 const logo = document.querySelector('.logo');
 
-
-
 burger.addEventListener('click', () => {
   burger.classList.add('hide');
   nav1.classList.replace('hide', 'show');
@@ -25,8 +23,4 @@ btnCls.addEventListener('click', () => {
   btnCls.classList.replace('show', 'hide');
   fb.classList.replace('hide', 'show');
   tw.classList.replace('hide', 'show');
-})
-
-function test() {
-  console.log(nav2);
-}
+});

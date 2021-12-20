@@ -13,6 +13,7 @@
   --teal: #006daa;
   --red: #ab0d02;
   --yellow: #d6b600;
+  --dirty-white: #f7f6ef;
   --white: #fff;
   --dark-gray: #454545;
   --primary: #00262b;
@@ -126,10 +127,50 @@ a {
 
 /*   HEADLINE SECTION    */
 #headline {
-  position: relative;
-  background-image: url(./images/hero-photo-02.jpeg);
+  background-image: url(./images/hero-photo-03.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 620px;
-  opacity: 0.7;
+}
+
+.inner-hero {
+  padding: 90px 0;
+}
+
+blockquote {
+  font-size: 16px;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--brand);
+  font-weight: bolder;
+  margin: 10px 0 20px 0;
+}
+
+.hero-paragraph {
+  background-color: rgba(236, 236, 236, 0.2);
+  border: 2px solid var(--white);
+  color: var(--secondary);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 20px 12px;
+}
+
+.hero-date {
+  color: var(--primary);
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: bolder;
+  padding: 12px 0 0 0;
+}
+
+.hero-join {
+  color: var(--primary);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
 }
