@@ -128,7 +128,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 5px 5px 10px var(--primary);
-  height: 600px;
+  height: 620px;
 }
 
 .inner-hero {
@@ -624,8 +624,45 @@ blockquote {
     padding: 10px 25px;
   }
 
+  /* HERO SECTION DESKTOP  */
 
+  .hero-desktop {
+    width: 768px;
+  }
 
+  blockquote {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .hero-paragraph {
+    max-width: 600px;
+    background-color: rgba(236, 236, 236, 1);
+    line-height: 1.7;
+    padding: 15px;
+    opacity: 0.8;
+
+  }
+
+  .hero-date {
+    font-size: 32px;
+    line-height: 1;
+    padding: 40px 0 10px 0;
+    text-shadow: 2px 2px 5px var(--terciary);
+  }
+
+  .hero-join {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    opacity: 0.8;
+    text-shadow: 2px 2px 5px var(--terciary);
+  }
 
 
 
