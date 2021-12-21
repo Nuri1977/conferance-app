@@ -1,3 +1,4 @@
+/*
 const burger = document.querySelector('.burger');
 const nav1 = document.querySelector('.nav1');
 const nav2 = document.querySelector('.nav2');
@@ -24,3 +25,5 @@ btnCls.addEventListener('click', () => {
   fb.classList.replace('hide', 'show');
   tw.classList.replace('hide', 'show');
 });
+
+*/

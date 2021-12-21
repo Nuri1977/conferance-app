@@ -68,6 +68,7 @@ a {
 
 .nav1 {
   background-color: var(--primary);
+  display: none;
 }
 
 .nav1 a {
@@ -78,16 +79,22 @@ a {
   background-color: var(--white);
   color: var(--primary);
   box-shadow: 10px 10px 20px var(--primary);
+  display: none;
+}
+
+.logo img {
+  height: 60px;
 }
 
 .ul-1 {
   padding: 10px 0;
 }
 
-.ul-1 > * {
+.ul-1 li {
   color: var(--primary);
   padding: 5px;
-  font-weight: bold;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
 .btn-close {
@@ -98,6 +105,7 @@ a {
 .btn-close a {
   font-size: 20px;
   padding: 0 10px;
+  display: none;
 }
 
 .ul-2 {
@@ -110,16 +118,8 @@ a {
 
 .ul-2 a {
   color: var(--primary);
-  font-weight: bold;
-}
-
-.ul-1 > *:hover {
-  opacity: 0.7;
-}
-
-.ul-2 li > *:hover {
-  border-bottom: 3px solid var(--primary);
-  padding-bottom: 3px;
+  font-weight: 800;
+  opacity: 0.9;
 }
 
 /*   HEADLINE SECTION    */
@@ -127,6 +127,7 @@ a {
   background-image: url(./images/hero-photo-03.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 5px 5px 10px var(--primary);
   height: 600px;
 }
 
@@ -150,7 +151,7 @@ blockquote {
   font-weight: 900;
   margin: 15px 0 20px 0;
   width: 100%;
-  background-image: url(../images/fire.jpg);
+  background-image: url(/images/fire.jpg);
   background-size: cover;
   background-position: center center;
   -webkit-background-clip: text;
@@ -570,4 +571,62 @@ blockquote {
   color: var(--white);
   font-size: 14px;
   opacity: 0.8;
+}
+
+/* ------------------------------------------------------------------- */
+
+/*                  DESKTOP VIEW                                      */
+
+/* ------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  /*  HEADER SECTION  */
+  .burger {
+    display: none;
+  }
+
+  .nav1 {
+    display: block;
+  }
+
+  .nav2 {
+    display: block;
+    height: 70px;
+  }
+
+  .nav2a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ul-1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ul-1 li {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .ul-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ul-2 li {
+    padding: 10px 25px;
+  }
+
+
+
+
+
+
 }
