@@ -144,22 +144,28 @@ blockquote {
 
 .hero-title {
   font-family: var(--cocogoose-font);
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 1.2;
   color: var(--secondary);
-  font-weight: 400;
+  font-weight: 900;
   margin: 15px 0 20px 0;
+  width: 100%;
+  background-image: url(../images/fire.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-paragraph {
-  background-color: rgba(236, 236, 236, 0.2);
+  background-color: rgba(236, 236, 236, 0.6);
   border: 2px solid var(--white);
   color: var(--primary);
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 600;
   padding: 20px 12px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .hero-date {
@@ -180,7 +186,7 @@ blockquote {
   opacity: 0.9;
 }
 
-/* COURSES SEECTION  */
+/* TOPICS SEECTION  */
 #courses {
   background-color: var(--primary);
   padding: 10px 0;
@@ -207,7 +213,7 @@ blockquote {
 .ul-courses li {
   background-color: rgba(256, 226, 256, 0.1);
   margin: 10px 0;
-  padding: 10px 0;
+  padding: 10px 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -220,6 +226,17 @@ blockquote {
   padding: 5px;
 }
 
+.fa-sitemap,
+.fa-users,
+.fa-stethoscope,
+.fa-user-lock,
+.fa-step-forward {
+  flex: 20%;
+  color: var(--terciary);
+  font-size: 32px;
+  padding: 10px;
+}
+
 .ul-courses h4 {
   flex: 30%;
   color: var(--secondary);
@@ -230,20 +247,22 @@ blockquote {
   flex: 50%;
   color: var(--terciary);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   font-weight: 400;
+  opacity: 0.8;
 }
 
 .more-courses {
   cursor: pointer;
   width: 80%;
-  margin: 20px auto 10px auto;
+  margin: 30px auto 20px auto;
   color: var(--white);
   background-color: var(--secondary);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  padding: 20px 40px;
+  padding: 30px 10px;
+  opacity: 0.9;
 }
 
 /* ISNTRUCTOR SECTION */
@@ -320,7 +339,7 @@ blockquote {
 }
 
 .profile-more {
-  outline: 1px solid var(--primary);
+  outline: 1px solid var(--terciary);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -333,6 +352,72 @@ blockquote {
   color: var(--secondary);
   padding: 10px 10px 0 10px;
   font-weight: bold;
+}
+
+/* PARTNERS SECTION */
+#partners {
+  background-color: var(--primary);
+}
+
+#inner-pertners {
+  padding: 10px 0 30px 0;
+}
+
+#inner-pertners hr {
+  width: 30px;
+  margin: auto;
+  border: 1px solid var(--secondary);
+}
+
+.partner-titlte {
+  color: var(--terciary);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+  opacity: 0.9;
+}
+
+.ul-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.ul-partners li {
+  flex: 33%;
+  color: var(--terciary);
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.ul-partners li img {
+  max-width: 80px;
+}
+
+/*  FOOTER SECTON  */
+#footer {
+  background-color: var(--white);
+}
+
+.inner-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.inner-footer div {
+  flex: 50%;
+}
+
+.img-footer {
+  height: 50px;
 }
 
 /* ---------------------------------- */
@@ -363,10 +448,10 @@ blockquote {
   opacity: 0.7;
 }
 
-.hero-question {
+.paragraph-1 {
   color: var(--primary);
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.5;
   font-weight: 600;
   text-align: center;
   padding: 20px 12px 5px 12px;
@@ -380,4 +465,109 @@ blockquote {
   font-weight: bolder;
   display: block;
   text-align: center;
+}
+
+/*  THE LOGO - ABOUT PAGE   */
+#the-logo {
+  background-color: var(--white);
+}
+
+.inner-logo {
+  padding: 10px 0 20px 0;
+}
+
+.logo-title {
+  color: var(--primary);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  opacity: 0.9;
+}
+
+#inner-logo hr {
+  width: 30px;
+  margin: auto;
+  border: 1px solid var(--secondary);
+}
+
+.logo-image {
+  text-align: center;
+}
+
+.logo-image img {
+  width: 40%;
+  height: 40%;
+  text-align: center;
+}
+
+/*   PAST EVENTS ABOUT PAGE  */
+#past-event {
+  background-color: var(--white);
+  border-top: 1px solid var(--terciary);
+}
+
+.inner-past {
+  padding: 10px 0 20px 0;
+}
+
+.past-title {
+  color: var(--primary);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  opacity: 0.9;
+}
+
+#past-event hr {
+  width: 30px;
+  margin: auto;
+  border: 1px solid var(--secondary);
+}
+
+.past-overlay {
+  background-color: rgba(236, 10, 10, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#past-img1 {
+  background-image: url(./images/past-event-01.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  margin: 20px 0;
+}
+
+#past-img2 {
+  background-image: url(./images/past-event-02.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-year {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.event-location {
+  color: var(--white);
+  font-size: 14px;
+  opacity: 0.8;
 }
