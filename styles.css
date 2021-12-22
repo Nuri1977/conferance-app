@@ -149,7 +149,7 @@ blockquote {
   font-weight: 900;
   margin: 15px 0 20px 0;
   width: 100%;
-  background-image: url(/images/fire.jpg);
+  background-image: url(./images/fire.jpg);
   background-size: cover;
   background-position: center center;
   -webkit-background-clip: text;
