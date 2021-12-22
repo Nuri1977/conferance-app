@@ -27,3 +27,117 @@ function hideNavbar() {
 
 burger.addEventListener('click', showNavbar);
 btnCls.addEventListener('click', hideNavbar);
+
+/* -------------------------------------------------- */
+/*                  DATABASE                     */
+/* -------------------------------------------------- */
+const speakers = [
+  {
+    id: 1,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-01.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+  {
+    id: 2,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-02.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+  {
+    id: 3,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-03.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+  {
+    id: 4,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-04.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+  {
+    id: 5,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-05.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+  {
+    id: 6,
+    name: 'Speker1',
+    imageUrl: 'images/isntructor-05.jpg',
+    para1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    para2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+  },
+];
+
+/* -------------------------------------------------- */
+/*                 RENDERING CARDS                    */
+/* -------------------------------------------------- */
+const cardContent = document.querySelector('#cards-render');
+let cardObject = {};
+const btnMore = document.querySelector('.btn-more');
+const btnLess = document.querySelector('.btn-less');
+
+const rendeCards = () => {
+  cardContent.innerHTML = '';
+  for (let i = 0; i < speakers.length; i += 1) {
+    cardObject = speakers[i];
+    let showMore = '';
+    if (cardObject.id > 2) showMore = 'show-more';
+    const content = `
+    <li>
+      <div class="profile-img ${showMore}">
+        <img src="${cardObject.imageUrl}" alt="intructor 1">
+      </div>
+      <div id="profile-info" class="${showMore}">
+        <h3>${cardObject.name}</h3>
+        <h4>${cardObject.para1}</h4>
+        <hr/>
+        <h5>${cardObject.para2}</h5>
+      </div>
+    </li>
+    `;
+    cardContent.innerHTML += content;
+  }
+  btnMore.classList.remove('hide');
+  btnLess.classList.remove('show');
+};
+
+const rendeCards1 = () => {
+  cardContent.innerHTML = '';
+  for (let i = 0; i < speakers.length; i += 1) {
+    cardObject = speakers[i];
+    let showMore = '';
+    if (cardObject.id > 6) showMore = 'show-more';
+    const content = `
+    <li>
+      <div class="profile-img ${showMore}">
+        <img src="${cardObject.imageUrl}" alt="intructor 1">
+      </div>
+      <div id="profile-info" class="${showMore}">
+        <h3>${cardObject.name}</h3>
+        <h4>${cardObject.para1}</h4>
+        <hr/>
+        <h5>${cardObject.para2}</h5>
+      </div>
+    </li>
+    `;
+    cardContent.innerHTML += content;
+  }
+  btnMore.classList.add('hide');
+  btnLess.classList.add('show');
+};
+
+rendeCards();
+
+/* -------------------------------------------------- */
+/*                 SHOW MORE TOGLER                   */
+/* -------------------------------------------------- */
+btnMore.addEventListener('click', rendeCards1);
+btnLess.addEventListener('click', rendeCards);
