@@ -187,16 +187,16 @@ blockquote {
   opacity: 0.9;
 }
 
-/* TOPICS SEECTION  */
+/* PROGRAME SEECTION  */
 #courses {
   background-color: var(--primary);
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .course-menu {
   color: var(--terciary);
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   margin: 15px 0 10px 0;
 }
@@ -209,6 +209,7 @@ blockquote {
 
 .ul-courses {
   margin: 10px 0;
+  padding: 10px;
 }
 
 .ul-courses li {
@@ -266,7 +267,11 @@ blockquote {
   opacity: 0.9;
 }
 
-/* ISNTRUCTOR SECTION */
+.hole-program {
+  display: none;
+}
+
+/* SPEKERS SECTION */
 #intructors {
   background-color: var(--white);
   padding: 10px 0 20px 0;
@@ -275,9 +280,10 @@ blockquote {
 .instructors-title {
   color: var(--primary);
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   margin: 15px 0 10px 0;
+  opacity: 0.9;
 }
 
 #intructors hr {
@@ -288,6 +294,7 @@ blockquote {
 
 .ul-instructors {
   margin: 10px 0;
+  padding: 10px 0;
 }
 
 .ul-instructors li {
@@ -308,20 +315,24 @@ blockquote {
 
 .profile-img img {
   width: 100%;
+  height: 150px;
 }
 
 #profile-info h3 {
   color: var(--primary);
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin: 5px 0;
+  opacity: 0.7;
 }
 
 #profile-info h4 {
   color: var(--secondary);
+  font-size: 16px;
   font-style: italic;
   font-weight: 500;
   margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 #profile-info hr {
@@ -333,10 +344,12 @@ blockquote {
 
 #profile-info h5 {
   color: var(--primary);
+  font-size: 16px;
   line-height: 1.3;
   font-style: italic;
   font-weight: 700;
   margin: 10px 0;
+  opacity: 0.8;
 }
 
 .profile-more {
@@ -373,7 +386,7 @@ blockquote {
 .partner-titlte {
   color: var(--terciary);
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.3;
   font-weight: 500;
   margin: 20px 0 10px 0;
@@ -398,7 +411,7 @@ blockquote {
 }
 
 .ul-partners li img {
-  max-width: 80px;
+  width: 80px;
 }
 
 /*  FOOTER SECTON  */
@@ -413,8 +426,19 @@ blockquote {
   padding: 30px;
 }
 
-.inner-footer div {
+.logo-div,
+.para-div {
   flex: 50%;
+  text-align: center;
+}
+
+.para-desktop {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px 30px;
+  color: var(--primary);
+  font-weight: 700;
+  opacity: 0.7;
 }
 
 .img-footer {
@@ -585,7 +609,7 @@ blockquote {
     margin: auto;
   }
 
-  /*  HEADER SECTION  */
+  /*  HEADER SECTION - DESKTOP */
   .burger {
     display: none;
   }
@@ -646,7 +670,6 @@ blockquote {
     line-height: 1.7;
     padding: 15px;
     opacity: 0.8;
-
   }
 
   .hero-date {
@@ -664,6 +687,266 @@ blockquote {
     text-shadow: 2px 2px 5px var(--terciary);
   }
 
+  /*  MAIN PROGRAMME DESKTOP  */
+  #courses {
+    padding: 30px 0 50px 0;
+  }
 
+  .course-menu {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+  }
+
+  #courses hr {
+    width: 50px;
+    margin: auto;
+    border: 1px solid var(--secondary);
+  }
+
+  .ul-courses {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  .ul-courses li {
+    flex: 20%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .fa-sitemap,
+  .fa-users,
+  .fa-stethoscope,
+  .fa-user-lock,
+  .fa-step-forward {
+    color: var(--terciary);
+    font-size: 32px;
+    padding: 10px;
+  }
+
+  .ul-courses h4 {
+    font-size: 20px;
+  }
+
+  .ul-courses p {
+    padding: 10px;
+  }
+
+  .more-courses {
+    display: none;
+  }
+
+  .div-program {
+    text-align: center;
+  }
+
+  .hole-program {
+    color: var(--terciary);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 0;
+    border-bottom: 1px solid var(--terciary);
+    display: inline-block;
+    opacity: 0.9;
+  }
+
+  /* SPEAKERS SECTION  - DESKTOP */
+  #intructors {
+    padding: 30px 0 50px 0;
+  }
+
+  .instructors-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 15px 0 10px 0;
+    opacity: 0.9;
+  }
+
+  #intructors hr {
+    width: 40px;
+    margin: auto;
+    border: 1px solid var(--secondary);
+  }
+
+  .ul-instructors {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .ul-instructors li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .profile-img {
+    flex: 35%;
+  }
+
+  #profile-info {
+    flex: 75%;
+  }
+
+  .profile-img img {
+    width: 100%;
+    height: 150px;
+  }
+
+  #profile-info h3 {
+    font-weight: 900;
+    opacity: 0.9;
+  }
+
+  #profile-info h4 {
+    color: var(--secondary);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+
+  #profile-info hr {
+    width: 30px;
+    margin: auto auto auto 0;
+    border-color: var(--primary);
+    border-width: thin;
+    opacity: 0.5;
+  }
+
+  #profile-info h5 {
+    color: var(--primary);
+    font-size: 14px;
+    line-height: 1.3;
+    font-style: normal;
+    font-weight: 900;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+
+  .profile-more {
+    display: none;
+  }
+
+  /* PARTNERS SECTION  - DESKTOP */
+  #inner-pertners {
+    padding: 30px 0 30px 0;
+  }
+
+  .partner-titlte {
+    color: var(--terciary);
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 20px 0 15px 0;
+    opacity: 0.9;
+  }
+
+  .ul-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 10px 0;
+  }
+
+  .ul-partners li {
+    flex: 20%;
+    color: var(--terciary);
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  .ul-partners li img {
+    width: 150px;
+  }
+
+  /* FOOTER DESKTOP   */
+  #footer {
+    background-color: var(--white);
+  }
+
+  .inner-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .logo-div {
+    flex: 30%;
+    text-align: right;
+  }
+
+  .para-div {
+    flex: 70%;
+  }
+
+  .para-desktop {
+    text-align: left;
+    padding: 10px 30px;
+    color: var(--primary);
+    font-weight: 700;
+    opacity: 0.7;
+  }
+
+  .img-footer {
+    height: 120px;
+  }
+
+  /*   HERO SECTION ABOUT PAGE - DESKTOp */
+  .inner-hero {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .hero-paragraph-ab {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--terciary);
+    color: var(--primary);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 12px;
+    opacity: 0.7;
+  }
+
+  .paragraph-1 {
+    color: var(--primary);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 12px 5px 12px;
+    opacity: 0.9;
+  }
+
+  .hero-contact {
+    text-decoration: underline;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+  }
 
 }
