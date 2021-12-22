@@ -152,6 +152,7 @@ blockquote {
   background-image: url(./images/fire.jpg);
   background-size: cover;
   background-position: center center;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
