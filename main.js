@@ -1,29 +1,29 @@
-/*
 const burger = document.querySelector('.burger');
 const nav1 = document.querySelector('.nav1');
 const nav2 = document.querySelector('.nav2');
-const btnCls = document.querySelector('.btn-close');
+const btnCls = document.querySelector('.a-close');
 const fb = document.querySelector('.fb');
 const tw = document.querySelector('.tw');
 const logo = document.querySelector('.logo');
 
-burger.addEventListener('click', () => {
+function showNavbar() {
   burger.classList.add('hide');
-  nav1.classList.replace('hide', 'show');
-  nav2.classList.replace('hide', 'show');
-  btnCls.classList.replace('hide', 'show');
-  fb.classList.replace('show', 'hide');
-  tw.classList.replace('show', 'hide');
-  logo.classList.replace('show', 'hide');
-});
+  nav1.classList.add('show');
+  nav2.classList.add('show');
+  btnCls.classList.add('show');
+  fb.classList.add('hide');
+  tw.classList.add('hide');
+  logo.classList.add('hide');
+}
 
-btnCls.addEventListener('click', () => {
+function hideNavbar() {
   burger.classList.remove('hide');
-  nav1.classList.replace('show', 'hide');
-  nav2.classList.replace('show', 'hide');
-  btnCls.classList.replace('show', 'hide');
-  fb.classList.replace('hide', 'show');
-  tw.classList.replace('hide', 'show');
-});
+  nav1.classList.remove('show');
+  nav2.classList.remove('show');
+  btnCls.classList.remove('show');
+  fb.classList.remove('hide');
+  tw.classList.remove('hide');
+}
 
-*/
+burger.addEventListener('click', showNavbar);
+btnCls.addEventListener('click', hideNavbar);

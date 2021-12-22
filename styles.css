@@ -41,14 +41,6 @@ a {
   margin: auto;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 /*  HEAD NAVIGATION */
 .burger {
   position: absolute;
@@ -102,9 +94,8 @@ a {
   justify-content: flex-end;
 }
 
-.btn-close a {
+.a-close {
   font-size: 20px;
-  padding: 0 10px;
   display: none;
 }
 
@@ -416,14 +407,14 @@ blockquote {
 
 /*  FOOTER SECTON  */
 #footer {
-  background-color: var(--secondary);
+  background-color: var(--white);
 }
 
 .inner-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 .logo-div,
@@ -434,8 +425,8 @@ blockquote {
 
 .para-desktop {
   text-align: left;
-  font-size: 14px;
-  padding: 10px 30px;
+  font-size: 12px;
+  padding: 10px 10px;
   color: var(--primary);
   font-weight: 700;
   opacity: 0.7;
@@ -631,11 +622,13 @@ blockquote {
 
   .nav1 {
     display: block;
+    max-width: 100%;
   }
 
   .nav2 {
     display: block;
     height: 70px;
+    max-width: 100%;
   }
 
   .nav2a {
@@ -666,7 +659,7 @@ blockquote {
   /* HERO SECTION DESKTOP  */
 
   .hero-desktop {
-    width: 768px;
+    width: 740px;
   }
 
   blockquote {
@@ -1002,4 +995,13 @@ blockquote {
 
 
 
+}
+
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
